@@ -1,6 +1,6 @@
 name: Fetch site images
 
-on: workflow_dispatch
+on: [push, workflow_dispatch]
 
 permissions:
   contents: write
@@ -30,5 +30,4 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add public/images
-          git commit -m "Add site images downloaded from Base44 CDN"
-          git push
+          git diff --cached --quiet || (git commit -m "Add site images downloaded from Base44 CDN" && git push)
