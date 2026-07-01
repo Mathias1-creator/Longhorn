@@ -1,0 +1,34 @@
+name: Fetch site images
+
+on: workflow_dispatch
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download images from Base44 CDN
+        run: |
+          mkdir -p public/images
+          base="https://media.base44.com/images/public/6a41a03fae00f0819e03c6c9"
+          curl -sSfL -o public/images/logo.png "$base/8794116c3_ChatGPTImageJun28202610_19_03PM.png"
+          curl -sSfL -o public/images/hero.png "$base/bf6475a36_generated_image.png"
+          curl -sSfL -o public/images/about-panel.png "$base/19dacd4d5_generated_image.png"
+          curl -sSfL -o public/images/service-ev-chargers.png "$base/4b44c06ec_generated_image.png"
+          curl -sSfL -o public/images/service-panel-upgrades.png "$base/333d9a934_generated_image.png"
+          curl -sSfL -o public/images/service-lighting-remodels.png "$base/ad266afc0_generated_image.png"
+          curl -sSfL -o public/images/service-repairs-smart.png "$base/aa09aaf36_generated_image.png"
+          ls -la public/images
+          file public/images/*.png
+
+      - name: Commit images
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/images
+          git commit -m "Add site images downloaded from Base44 CDN"
+          git push
