@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { Zap, MapPin, Clock, CheckCircle, ChevronRight } from "lucide-react";
 
-const HERO_IMAGE = "/images/hero.png";
+const HERO_IMAGE = import.meta.env.BASE_URL + "images/hero.png";
 
 const valueCards = [
   {

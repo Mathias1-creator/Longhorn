@@ -1,4 +1,4 @@
-const LOGO_URL = "/images/logo.png";
+const LOGO_URL = import.meta.env.BASE_URL + "images/logo.png";
 
 const sizes = {
   sm: { width: 75 },

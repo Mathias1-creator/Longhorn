@@ -7,28 +7,28 @@ const services = [
     title: "EV Chargers & Appliance Wiring",
     desc: "Installation support for home EV chargers, induction stoves, and other high-demand electrical upgrades.",
     details: ["Level 2 EV Charger Installation", "Induction Stove Wiring", "240V Outlet Upgrades", "High-Demand Appliance Circuits", "Garage Electrical"],
-    image: "/images/service-ev-chargers.png",
+    image: import.meta.env.BASE_URL + "images/service-ev-chargers.png",
   },
   {
     icon: <Shield size={22} />,
     title: "Panel Upgrades & Service Changes",
     desc: "Panel changeouts, service upgrades, and electrical improvements for safer, more reliable power.",
     details: ["Main Panel Replacement", "Sub-Panel Installation", "Service Upgrades (100A→200A)", "Circuit Breaker Replacement", "Insurance Panel Work"],
-    image: "/images/service-panel-upgrades.png",
+    image: import.meta.env.BASE_URL + "images/service-panel-upgrades.png",
   },
   {
     icon: <Lightbulb size={22} />,
     title: "Lighting, Kitchens & Bath Remodels",
     desc: "Recessed lighting, remodel wiring, outlets, switches, and electrical work for kitchen and bathroom upgrades.",
     details: ["Recessed Lighting", "Kitchen Remodel Wiring", "Bathroom Electrical", "Outlet & Switch Upgrades", "Under-Cabinet Lighting"],
-    image: "/images/service-lighting-remodels.png",
+    image: import.meta.env.BASE_URL + "images/service-lighting-remodels.png",
   },
   {
     icon: <Wrench size={22} />,
     title: "Repairs, Insurance Work & Smart Devices",
     desc: "General electrical repairs, insurance-related work, cameras, security devices, smart doorbells, and everyday wiring needs.",
     details: ["Electrical Repairs", "Insurance Electrical Work", "Smart Doorbell Installation", "Security Cameras", "Smart Home Wiring"],
-    image: "/images/service-repairs-smart.png",
+    image: import.meta.env.BASE_URL + "images/service-repairs-smart.png",
   },
 ];
 

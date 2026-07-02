@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Award, Users, Zap, MapPin } from "lucide-react";
 
-const PANEL_IMAGE = "/images/about-panel.png";
+const PANEL_IMAGE = import.meta.env.BASE_URL + "images/about-panel.png";
 
 const trustBadges = [
 { icon: <Award size={20} />, label: "Licensed & Bonded · Lic #1122626" },
@@ -139,7 +139,7 @@ export default function About() {
                 className="overflow-hidden"
                 style={{ border: "1px solid rgba(198,139,58,0.3)" }}>
                 
-                <img src="/images/logo.png"
+                <img src={import.meta.env.BASE_URL + "images/logo.png"}
 
                 alt="Electrical work — Longhorn Lighting and Electrical"
                 className="w-full h-full object-cover"
