@@ -6,7 +6,7 @@ Built with React, Vite, and Tailwind CSS. The site is fully static — no backen
 
 ## Pages
 
-- **Home** (`src/pages/Home.jsx`) — hero, value cards, service areas
+- **Home** (`src/pages/Home.jsx`) — hero, value cards, service areas, customer reviews
 - **Services** (`src/pages/Services.jsx`) — EV chargers, panel upgrades, lighting/remodels, repairs & smart devices
 - **About** (`src/pages/About.jsx`) — Brad's background and credentials
 - **Contact** (`src/pages/Contact.jsx`) — call / text / email links
@@ -44,6 +44,7 @@ npm run preview
 ## Editing Content
 
 - Business phone, email, and hours: `src/pages/Contact.jsx`
+- Customer reviews: the `reviews` list at the top of `src/pages/Home.jsx` — replace the bracketed placeholders with real reviews (copy a block to add a third)
 - Services and their descriptions: `src/pages/Services.jsx`
 - Images: replace files in `public/images/` (keep the same filenames, or update the paths referenced in `src/pages/*.jsx` and `src/components/Logo.jsx`)
 - Page titles / SEO metadata: `index.html`

@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import { Zap, MapPin, Clock, CheckCircle, ChevronRight } from "lucide-react";
+import { Zap, MapPin, Clock, CheckCircle, ChevronRight, Star } from "lucide-react";
 
 const HERO_IMAGE = import.meta.env.BASE_URL + "images/hero.png";
 
@@ -19,6 +19,21 @@ const valueCards = [
     icon: <Clock size={24} />,
     title: "25 Years of Experience",
     desc: "Hands-on electrical experience for remodels, upgrades, repairs, and everyday electrical needs.",
+  },
+];
+
+// Replace the bracketed placeholder text below with real customer reviews.
+// To add a third review, copy one { quote, name, area } block and paste it after the second.
+const reviews = [
+  {
+    quote: "[Paste the first customer review here.]",
+    name: "[Customer Name]",
+    area: "[Neighborhood]",
+  },
+  {
+    quote: "[Paste the second customer review here.]",
+    name: "[Customer Name]",
+    area: "[Neighborhood]",
   },
 ];
 
@@ -253,6 +268,80 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* CUSTOMER REVIEWS */}
+      <section className="py-16 md:py-24" style={{ backgroundColor: "#0D0D0D" }}>
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <p
+              className="text-xs uppercase tracking-widest mb-3"
+              style={{ color: "#C68B3A", fontFamily: "'JetBrains Mono', monospace" }}
+            >
+              What Customers Say
+            </p>
+            <h2
+              className="font-heading font-bold uppercase"
+              style={{
+                fontFamily: "'Oswald', sans-serif",
+                fontSize: "clamp(1.8rem, 4vw, 3rem)",
+                color: "#F5F2EE",
+                letterSpacing: "0.05em",
+              }}
+            >
+              Customer Reviews
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {reviews.map((review, i) => (
+              <div
+                key={i}
+                className="p-8 flex flex-col"
+                style={{
+                  backgroundColor: "rgba(245,242,238,0.04)",
+                  border: "1px solid rgba(198,139,58,0.25)",
+                  borderTop: "3px solid #C68B3A",
+                }}
+              >
+                <div className="flex gap-1 mb-5">
+                  {[1, 2, 3, 4, 5].map((star) => (
+                    <Star key={star} size={16} fill="#C68B3A" color="#C68B3A" />
+                  ))}
+                </div>
+                <p
+                  className="text-base mb-6 flex-1"
+                  style={{ color: "rgba(245,242,238,0.85)", fontFamily: "'IBM Plex Sans', sans-serif", lineHeight: 1.7 }}
+                >
+                  &ldquo;{review.quote}&rdquo;
+                </p>
+                <div className="flex items-center gap-3">
+                  <span
+                    className="w-1.5 h-1.5 flex-shrink-0"
+                    style={{ backgroundColor: "#B53A2F", borderRadius: 0 }}
+                  />
+                  <div>
+                    <p
+                      className="font-heading font-medium uppercase tracking-wide text-base"
+                      style={{ fontFamily: "'Oswald', sans-serif", color: "#F5F2EE", letterSpacing: "0.06em" }}
+                    >
+                      {review.name}
+                    </p>
+                    <p
+                      className="text-xs uppercase tracking-widest mt-1"
+                      style={{ color: "#C68B3A", fontFamily: "'JetBrains Mono', monospace" }}
+                    >
+                      {review.area}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* COPPER DIVIDER */}
+      <div style={{ height: "1px", backgroundColor: "#C68B3A", opacity: 0.4 }} />
 
       {/* FINAL CTA */}
       <section className="py-20 md:py-28" style={{ backgroundColor: "#0D0D0D" }}>
