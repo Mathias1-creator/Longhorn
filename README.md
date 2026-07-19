@@ -1,6 +1,6 @@
 # LONGHORN LIGHTING AND ELECTRICAL
 
-Marketing website for Longhorn Lighting and Electrical — Brad Long, licensed & bonded electrician (Lic #1122626) serving San Francisco, Marin, the East Bay, and nearby Peninsula areas.
+Marketing website for Longhorn Lighting and Electrical — Brad Long, licensed & bonded electrician (Lic #1122626) serving San Francisco, concentrating in Bernal Heights, Noe Valley, the Mission District, Potrero Hill, and Glen Park.
 
 Built with React, Vite, and Tailwind CSS. The site is fully static — no backend required. All images are served locally from `public/images/`.
 

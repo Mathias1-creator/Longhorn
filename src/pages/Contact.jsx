@@ -209,7 +209,7 @@ export default function Contact() {
               </h2>
             </div>
             <div className="flex flex-col gap-2">
-              {["San Francisco", "Marin", "East Bay", "Nearby Peninsula Areas"].map((area) => (
+              {["San Francisco", "Bernal Heights", "Noe Valley", "Mission District", "Potrero Hill", "Glen Park"].map((area) => (
                 <div
                   key={area}
                   className="flex items-center gap-3 py-2"

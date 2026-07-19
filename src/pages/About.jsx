@@ -86,7 +86,7 @@ export default function About() {
                 className="text-lg mb-6 leading-relaxed"
                 style={{ color: "#2C2C2C", fontFamily: "'IBM Plex Sans', sans-serif" }}>
                 
-                LONGHORN LIGHTING AND ELECTRICAL is led by Brad Long, a local electrician with 25 years of hands-on experience. Brad serves San Francisco, Marin, the East Bay, and nearby Peninsula communities with reliable electrical work and straightforward communication.
+                LONGHORN LIGHTING AND ELECTRICAL is led by Brad Long, a local electrician with 25 years of hands-on experience. Brad serves San Francisco — concentrating in Bernal Heights, Noe Valley, the Mission District, Potrero Hill, and Glen Park — with reliable electrical work and straightforward communication.
               </p>
               <p
                 className="text-lg mb-10 leading-relaxed"

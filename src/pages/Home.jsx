@@ -33,7 +33,7 @@ export default function Home() {
   const tickerRef = useRef(null);
 
   useEffect(() => {
-    document.title = "LONGHORN LIGHTING AND ELECTRICAL | Local Electrician in San Francisco, Marin & East Bay";
+    document.title = "LONGHORN LIGHTING AND ELECTRICAL | Local Electrician in San Francisco";
   }, []);
 
   return (
@@ -73,7 +73,7 @@ export default function Home() {
               className="text-xs uppercase tracking-widest"
               style={{ color: "#C68B3A", fontFamily: "'JetBrains Mono', monospace" }}
             >
-              San Francisco · Marin · East Bay · Peninsula
+              San Francisco · Bernal Heights · Noe Valley · Mission District · Potrero Hill · Glen Park
             </span>
           </div>
 
@@ -98,7 +98,7 @@ export default function Home() {
             className="text-lg md:text-xl mb-8 max-w-2xl"
             style={{ color: "rgba(245,242,238,0.75)", fontFamily: "'IBM Plex Sans', sans-serif", lineHeight: 1.6 }}
           >
-            Reliable local electrical work for homes and businesses across San Francisco, Marin, the East Bay, and nearby Peninsula areas.
+            Reliable local electrical work for homes and businesses across San Francisco, concentrating in Bernal Heights, Noe Valley, the Mission District, Potrero Hill, and Glen Park.
           </p>
 
           {/* Trust line */}
@@ -229,13 +229,13 @@ export default function Home() {
               color: "#F5F2EE",
             }}
           >
-            Serving the Bay Area
+            Serving San Francisco
           </h2>
           <p className="text-base mb-10 max-w-xl mx-auto" style={{ color: "rgba(245,242,238,0.8)", fontFamily: "'IBM Plex Sans', sans-serif" }}>
-            Local electrical service for homeowners and businesses across the Bay Area.
+            Local electrical service for homeowners and businesses across San Francisco.
           </p>
           <div className="flex flex-wrap justify-center gap-3">
-            {["San Francisco", "Marin", "East Bay", "Nearby Peninsula Areas"].map((area) => (
+            {["San Francisco", "Bernal Heights", "Noe Valley", "Mission District", "Potrero Hill", "Glen Park"].map((area) => (
               <span
                 key={area}
                 className="px-5 py-2 text-sm uppercase tracking-widest font-medium"

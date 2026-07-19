@@ -11,7 +11,7 @@ export default function Footer() {
           <div className="flex flex-col gap-4">
             <Logo dark size="md" />
             <p className="text-sm leading-relaxed" style={{ color: "#4A4A4A", fontFamily: "'IBM Plex Sans', sans-serif" }}>
-              Licensed &amp; bonded local electrician serving San Francisco, Marin, the East Bay, and nearby Peninsula areas.
+              Licensed &amp; bonded local electrician serving San Francisco, concentrating in Bernal Heights, Noe Valley, the Mission District, Potrero Hill, and Glen Park.
             </p>
             <p
               className="text-xs uppercase tracking-widest"
@@ -57,7 +57,7 @@ export default function Footer() {
             >
               Service Areas
             </h3>
-            {["San Francisco", "Marin", "East Bay", "Nearby Peninsula Areas"].map((area) => (
+            {["San Francisco", "Bernal Heights", "Noe Valley", "Mission District", "Potrero Hill", "Glen Park"].map((area) => (
               <span
                 key={area}
                 className="text-sm"
