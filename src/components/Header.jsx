@@ -1,7 +1,8 @@
 import { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
-import Logo from "./Logo";
+
+const LOGO_MARK = import.meta.env.BASE_URL + "images/logo-mark.png";
 
 const navLinks = [
   { label: "Home", path: "/" },
@@ -48,7 +49,11 @@ export default function Header() {
         <div className="flex items-center justify-between h-20 md:h-24">
           {/* Logo */}
           <Link to="/" aria-label="Longhorn Lighting and Electrical — Home" className="flex-shrink-0">
-            <Logo dark size="sm" />
+            <img
+              src={LOGO_MARK}
+              alt="Longhorn Lighting & Electrical"
+              style={{ width: 120, height: "auto", display: "block" }}
+            />
           </Link>
 
           {/* Desktop Nav */}
